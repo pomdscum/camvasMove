@@ -26,9 +26,9 @@
             colorRect(0,0,canvas.width,canvas.height,'black');
             colorRect(pXpos,pYpos,pSize,pSize,'red');
         }
-        function  drawImgs(src,x,y,w,h)
-        canvasContext.drawImage(src,x,y,w,h);
-        
+        function  drawImgs(src,sx,sy,sw,sh,dx,dy,dw,dh){
+        canvasContext.drawImage(src,sx,sy,sw,sh,dx,dy,dw,dh);
+        }
         
         function colorRect(x,y,w,h,c){
             canvasContext.fillStyle = c;
